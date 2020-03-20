@@ -7,6 +7,7 @@ class Characters extends CI_Controller {
         parent::__construct();
         $this->load->model('characters_model');
         $this->load->helper('url_helper');
+        $this->load->library('word_conversion');
     }
 
     public function index()
